@@ -1,0 +1,31 @@
+
+.anuncio-imagem {
+    margin: 0.25em 15% 3em 15%;
+    width: 70%;
+}
+
+.anuncio-titulo {
+    margin: 0 67%;
+    color: gray;
+    font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .anuncio{
+        margin-top: 3em;
+    }
+
+    .anuncio-imagem {
+        width: 80%;
+    }
+
+    .anuncio-titulo {
+        margin: 0 76%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .anuncio {
+        display: none;
+    }
+}

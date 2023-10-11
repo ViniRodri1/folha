@@ -1,0 +1,121 @@
+.cabecalho {
+    display: flex;
+    background-color: var(--cor-de-fundo1);
+    padding: 1em 1em 0 1em;
+}
+
+.menu {
+    align-self: center;
+}
+
+.menu-icone {
+    width: 85%;
+}
+
+.logo {
+    width: 40%;
+    margin: 0 1em 0 3em;
+}
+
+.cabecalho-titulo,.rede-social,.social {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .cabecalho {
+        display: flex;
+        align-items: center;
+        padding: 2em 2em 0 2em;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    .menu-icone {
+        width: 85%;
+    }
+
+    .cabecalho-titulo {
+        display: block;
+        margin-bottom: 1em;
+        align-self: flex-end;
+        color: var(--cor-fonte2);
+    }
+
+    .cabecalho-titulo b {
+        font-weight: 700;
+    }
+
+    .midia-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 20%;
+        margin-left: 3em;
+    }
+    
+    .rede-social-item {
+        width: 100%;
+    }
+
+    .rede-social {
+        display: block;
+        text-align: center;
+        background-color: white;
+        border-radius: 5px;
+        padding: 0.25em;
+        width: 12%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cabecalho {
+        padding: 1em 4em 0 4em;
+    }
+
+    .logo {
+        margin-left: 6em;
+        width: 20%;
+    }
+
+    .cabecalho-titulo {
+        margin-right: 0;
+        margin-bottom: 0;
+        align-self: center;
+        font-size: 1rem;
+    }
+
+    .rede-social {
+        display: flex;
+        align-items: center;
+        justify-self: flex-start;
+        padding: 0.25em 0.5em; 
+        border-radius: 3px;
+        text-decoration: none;
+        width: 25%;
+    }
+    
+    .midia-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 9em;
+    }
+
+    .social {
+        display: block;
+        font-size: 0.5rem;
+        color: var(--cor-fonte1);
+    }
+
+    .twitter {
+        color: var(--cor-de-fundo3);
+    }
+
+    .rede-social-item {
+        width: 30%;
+        margin-right: 0.25em;
+    }
+}

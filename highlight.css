@@ -1,0 +1,82 @@
+.highlight-imagem {
+    position: relative;
+    margin: 1em 0;
+}
+
+.highlight-imagem img {
+    width: 100%;
+}
+
+.highlight-imagem p {
+    position: absolute;
+    left:0;
+    bottom: 10%;
+    background-color: var(--cor-de-fundo2);
+    color: var(--cor-fonte2);
+    padding: 0.25em 1em;
+}
+
+.segunda-imagem p {
+    width: 25%;
+}
+
+.terceira-imagem p {
+    width: 35%;
+}
+
+.highlight-titulo {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .highlight {
+        display: flex;
+        gap: 30px;
+    }
+
+    .highlight-imagem {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .highlight {
+        display: grid;
+        grid-template-areas: 
+        'titulo titulo titulo'
+        'pindureta bolis sapien';
+        row-gap: 10px;
+    }
+
+    .highlight-titulo {
+        display: block;
+        grid-area: titulo;
+        font-size: 1.5em;
+        color: var(--cor-fonte1);
+    }
+
+    .highlight-imagem {
+        grid-area: pindureta;
+        width: 100%;
+    }
+
+    .segunda-imagem {
+        grid-area: bolis;
+    }
+
+    .terceira-imagem {
+        grid-area: sapien;
+    }
+
+    .highlight-imagem p {
+        font-size: 0.75em;
+    }
+
+    .segunda-imagem p {
+        width: 12%;
+    }
+
+    .terceira-imagem p {
+        width: 14%;
+    }
+}

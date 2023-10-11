@@ -1,0 +1,144 @@
+.texto-titulo {
+    font-size: 1.25rem;
+    color: var(--cor-de-fundo3);
+    margin-top: 2.5em;
+}
+
+.texto-topicos-item {
+    margin: 1em 0;
+    font-size: 1rem;
+    color: var(--cor-fonte1);
+}
+
+.pirulita {
+    margin: 3em 0;
+}
+
+.pirulita-titulo {
+    font-size: 1.5rem;
+    color: var(--cor-de-fundo2);
+    margin-top: 2em;
+}
+
+.pirulita-imagem {
+    width: 50%;
+}
+
+.pirulita-descricao {
+    display: flex;
+    margin: 1.5em 0;
+}
+
+.pirulita-info{
+    margin-left: 1em;
+}
+
+.pirulita-descricao-titulo {
+    color: var(--cor-de-fundo2);
+    margin: 1em 0;
+    font-size: 0.875rem;
+}
+
+.pirulita-texto {
+    color: var(--cor-fonte1);
+}
+
+@media (min-width: 768px) {
+    .texto {
+        display: grid;
+        grid-template-areas: 
+        'topicos pirulita'
+        'suco anuncio';
+    }
+
+    .texto-topicos {
+        grid-column: topicos;
+        margin-right: 1.5em;
+    }
+
+    .pirulita {
+        grid-area: pirulita;
+    }
+
+    .suco {
+        grid-area: suco;
+        margin-right: 1.5em;
+    }
+
+    .anuncio {
+        grid-area: anuncio;
+        text-align: center;
+    }
+
+    .pirulita-titulo {
+        margin: 0;
+    }
+
+    .texto {
+        margin: 1.5em 0;
+    }
+
+    .texto-titulo {
+        font-size: 1.5rem;
+        margin-top: 2em;
+    }
+
+    .pirulita-imagem {
+        width: 35%;
+    }
+
+    .pirulita-descricao-titulo {
+        margin: 1em 0 0.5em 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .texto {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .pirulita-titulo {
+        font-size: 1.25rem;
+        margin: 0.5em 0;
+    }
+
+    .texto-titulo {
+        font-size: 1.25rem;
+        margin-top: 2em;
+    }
+
+    .pirulita-descricao-titulo {
+        font-size: 0.7rem;
+    }
+
+    .pirulita-texto {
+        font-size: 0.75rem;
+    }
+
+    .pirulita-imagem {
+        width: 40%;
+        margin: 0;
+    }
+
+    .texto-topicos-item {
+        font-size: 1rem;
+    }
+
+    .pirulita {
+        margin: 0 1em;
+    }
+    
+    .pirulita-titulo {
+        margin-top: 2em;
+    }
+
+    .interagi,.gostis {
+        width: 35%;
+    }
+
+    .texto-topicos {
+        width: 50%;
+    }
+}
