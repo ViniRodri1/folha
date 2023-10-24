@@ -1,83 +1,81 @@
 .swiper-slide {
-    position: relative;
+  position: relative;
 }
 
 .img-carrossel {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
-.swiper-button-prev, 
+.swiper-button-prev,
 .swiper-button-next {
-    display: none;
+  display: none;
 }
 
 .swiper-pagination {
-    position: initial;
-    margin: 0.5em 0 2em 0;
+  position: initial;
+  margin: 4.75em 0 2em 0;
 }
 
-.descricao-imagem {
-    position: absolute;
-    background-color: var(--cor-de-fundo3);
-    color: var(--cor-fonte2);
-    font-weight: 500;
-    width: 60%;
-    padding: 0.25em 1em;
-    bottom: 10%;
-    left: 0;
+.img-carrossel-descrição {
+  position: absolute;
+  bottom: 10%;
+  background-color: var(--verde-claro);
+  padding: 0.25em 1em;
+  color: var(--branco);
+  font-weight: 500;
 }
 
-.carrossel-descricao{
-    display: block;
-    font-weight: 700;
-    font-size: 1.5em;
-    margin-top: 0.75em;
-    color: var(--cor-fonte1);
+.descrição-carrossel {
+  font-weight: 700;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: -28%;
+  color: var(--verde-fonte);
 }
 
-.descricao-imagem-texto, .desktop {
-    display: none;
+.descrição-carrossel span,
+.img-desktop {
+  display: none;
 }
 
 @media (min-width: 768px) {
-    .descricao-imagem {
-        bottom: 25%;
-        left: 3%;
-        width: 35%;
-    }
+  .img-carrossel-descrição {
+    bottom: 27%;
+    left: 5%;
+    padding: 0.25em 4em 0.25em 1em;
+  }
 
-    .carrossel-descricao {
-        display: none;
-    }
+  .descrição-carrossel {
+    bottom: 8%;
+    left: 5%;
+    color: var(--branco);
+    font-size: 1.75rem;
+  }
 
-    .descricao-imagem-texto {
-        position: absolute;
-        color: var(--cor-fonte2);
-        font-weight: 700;
-        font-size: 1.75rem;
-        bottom: 7%;
-        left: 3%;
-    }
+  .descrição-carrossel span {
+    display: block;
+  }
 
-    .descricao-imagem-texto {
-        display: block;
-    }
+  .swiper-pagination {
+    margin: 1em 0;
+  }
 }
 
 @media (min-width: 1024px) {
-    .swiper-button-prev, 
-    .swiper-button-next {
-        display: block;
-    }
+  .img-desktop {
+    display: block;
+    width: 100%;
+  }
 
-    .desktop {
-        display: block;
-        width: 100%;
-    }
-    
-    .img-carrossel {
-        display: none;
-    }
+  .img-carrossel {
+    display: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    position: absolute;
+    top: 45%;
+  }
 }
-

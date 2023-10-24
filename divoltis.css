@@ -1,99 +1,91 @@
 .divoltis-titulo {
-    font-size: 1.5rem;
-    color: var(--cor-fonte1);
-    margin-top: 2em;
+  font-size: 1.5rem;
+  margin-top: 2em;
+  color: var(--verde-fonte);
+  font-weight: 500;
+}
+.divoltis-materia {
+  margin: 1.5em 0;
 }
 
-.divoltis-info img {
-    width: 100%;
-    margin-top: 1em;
+.divoltis-materia-img {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 0.75em;
 }
 
-.info-titulo {
-    color: var(--cor-de-fundo3);
-    margin: 1em 0;
-    font-size: 1rem;
+.divoltis-materia-titulo {
+  color: var(--verde-claro);
 }
 
-.info-descricao {
-    font-size: 1.2rem;
-    color: var(--cor-fonte1);
-    margin-bottom: 1em;
+.divoltis-materia-descrição {
+  color: var(--verde-fonte);
+  margin: 0.5em 0 1em 0;
+  font-size: 1.25rem;
 }
 
 .anuncio-desktop {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 768px) {
-    .divoltis {
-        display: grid;
-        grid-template-areas: 
-        'a a'
-        'b c'
-        'd e';
-        column-gap: 30px;
-    }
+  .divoltis {
+    display: grid;
+    grid-template-areas:
+      "titulo titulo"
+      "consetis aenean"
+      "matis divinis";
+    column-gap: 25px;
+  }
 
-    .divoltis-info img {
-        margin-top: 2em;
-        height: 65%;
-    }
+  .divoltis-titulo {
+    grid-area: titulo;
+  }
 
-    .divoltis-titulo {
-        grid-area: a;
-    }
+  .consetis {
+    grid-area: consetis;
+  }
 
-    .consetis {
-        grid-area: b;
-    }
+  .aenean {
+    grid-area: aenean;
+  }
 
-    .aenean {
-        grid-area: c;
-    }
+  .matis {
+    grid-area: matis;
+  }
 
-    .matis {
-        grid-area: d;
-    }
+  .divinis {
+    grid-area: divinis;
+  }
 
-    .divinis {
-        grid-area: e;
-    }
-
-    .info-descricao {
-        font-size: 1rem;
-    }
+  .divoltis-materia-descrição {
+    font-size: 1rem;
+  }
 }
 
-
 @media (min-width: 1024px) {
-    .divoltis {
-        grid-template-areas: 
-        'a a a'
-        'b c f'
-        'd e f';
-    }
+  .divoltis {
+    display: grid;
+    grid-template-areas:
+      "titulo titulo titulo"
+      "consetis aenean pub"
+      "matis divinis pub";
+  }
 
-    .anuncio-desktop {
-        display: block;
-        grid-area: f;
-        text-align: center;
-        margin-top: 1.25em;
-    }
+  .anuncio-desktop {
+    display: block;
+    grid-area: pub;
+    text-align: center;
+    position: relative;
+    margin-top: 3em;
+  }
 
-    .publicidade {
-        font-size: 0.5rem;
-        margin: 0 0 0.5em 80%;
-        color: gray;
-    }
-    
-    .anuncio-desktop img {
-        width: 95%;
-        height: 90%;
-    }
-   
-   .info-titulo {
-        margin: 0.5em 0;
-        font-size: 0.75em;
-   }
+  .anuncio-desktop img {
+    width: 100%;
+    height: auto;
+  }
+
+  .anuncio-desktop > .anuncio-titulo {
+    top: -2%;
+  }
 }

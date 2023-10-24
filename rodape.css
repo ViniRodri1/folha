@@ -1,50 +1,57 @@
-.voltar-topo {
+.voltar {
+  background-color: var(--verde-claro);
+  padding: 0.5em 1em;
   display: flex;
-  background-color: var(--cor-de-fundo3);
-  padding: 1em;
-  gap: 10px;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
 }
 
-.voltar-topo p {
-  color: var(--cor-fonte2);
+.voltar button {
+  background-color: transparent;
+  border: none;
+  font-family: var(--fonte);
+  color: var(--branco);
+  font-weight: 500;
+  padding: 0;
 }
 
-.copyright {
-  padding: 1.75em 1em;
-  background-color: var(--cor-fonte1);
-  color: var(--cor-fonte2);
+.copy {
+  padding: 2em 1em;
+  background-color: var(--verde-fonte);
 }
 
-.logo-rodape {
+.copy-descrição {
+  color: var(--branco);
+  font-family: var(--fonte);
+}
+
+.logo-footer {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .copyright {
+  .copy {
+    padding: 1em 3em;
     display: flex;
-    padding: 1.5em 2em;
     align-items: center;
+    justify-content: center;
   }
 
-  .copyright-texto {
-    font-size: 0.75rem;
-    margin-left: 4em;
-  }
-
-  .logo-rodape {
+  .logo-footer {
     display: block;
+  }
+
+  .copy-descrição {
+    font-size: 0.75rem;
+    margin-left: 2em;
   }
 }
 
 @media (min-width: 1024px) {
-  .copyright {
-    padding: 1em 12em;
+  .copy {
+    padding: 1em 6em;
   }
-
-  .copyright-texto {
-    font-size: 0.75rem;
-    margin-left: 8em;
+  .copy-descrição {
+    margin-left: 4em;
   }
 }

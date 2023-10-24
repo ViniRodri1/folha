@@ -1,0 +1,75 @@
+.calcids-img {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.cacilds {
+  position: relative;
+}
+
+.calcids-descriçao {
+  position: absolute;
+  bottom: 20%;
+  background-color: var(--vermelho);
+  padding: 0.25em 2em 0.25em 1em;
+}
+
+.bolis {
+  padding: 0.25em 5em 0.25em 1em;
+}
+
+.sapien {
+  padding: 0.25em 6em 0.25em 1em;
+}
+
+.top-cacilds-titulo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .top-cacilds {
+    display: flex;
+    column-gap: 25px;
+    margin-top: 3em;
+  }
+
+  .calcids-descriçao {
+    font-size: 0.75rem;
+  }
+
+  .bolis,
+  .sapien {
+    padding: 0.25em 2em 0.25em 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-cacilds {
+    display: grid;
+    grid-template-areas:
+      "top top top"
+      "pin bol sap";
+    column-gap: 25px;
+  }
+
+  .top-cacilds-titulo {
+    display: block;
+    grid-area: top;
+    margin-top: 1em;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--verde-escuro);
+  }
+
+  .pin {
+    grid-area: pin;
+  }
+
+  .bol {
+    grid-area: bol;
+  }
+
+  .sap {
+    grid-area: sap;
+  }
+}

@@ -1,31 +1,24 @@
-
-.anuncio-imagem {
-    margin: 0.25em 15% 3em 15%;
-    width: 70%;
+.anuncio {
+  display: block;
+  margin: 5em 2em 3em 2em;
+  text-align: center;
+  position: relative;
 }
 
 .anuncio-titulo {
-    margin: 0 67%;
-    color: gray;
-    font-size: 0.75rem;
+  font-size: 0.5rem;
+  color: gray;
+  position: absolute;
+  top: -4%;
+  right: 0;
 }
 
-@media (min-width: 768px) {
-    .anuncio{
-        margin-top: 3em;
-    }
-
-    .anuncio-imagem {
-        width: 80%;
-    }
-
-    .anuncio-titulo {
-        margin: 0 76%;
-    }
+.anuncio-img {
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
-    .anuncio {
-        display: none;
-    }
+  .anuncio {
+    display: none;
+  }
 }

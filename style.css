@@ -1,34 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
 :root {
-    --cor-de-fundo1: #2980B9;
-    --cor-de-fundo2: #E74C3C;
-    --cor-de-fundo3: #3498DB;
-    --cor-fonte1: #2C3E50;
-    --cor-fonte2: #ECF0F1;
-    --fonte: 'Roboto';
+  --verde-fonte: #344e41;
+  --verde-claro: #588157;
+  --verde-escuro: #3a5a40;
+  --vermelho: #a3b18a;
+  --branco: #dad7cd;
+  --fonte: "Ubuntu";
 }
 
-
 body {
-    background-color: var(--cor-fonte2);
-    font-family: var(--fonte);
-    font-size: 1rem;
+  background-color: var(--branco);
 }
 
 main {
-    padding: 2em 1em;
-    box-sizing: border-box;
+  font-family: var(--fonte);
+  margin: 1em;
 }
 
 @media (min-width: 768px) {
-    main {
-        padding: 3em 2em;
-    }
+  main {
+    margin: 4em 3em;
+  }
 }
 
 @media (min-width: 1024px) {
-    main {
-        padding: 4em;
-    }
+  main {
+    margin: 4em;
+  }
 }
